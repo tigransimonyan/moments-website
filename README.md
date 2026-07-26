@@ -11,8 +11,8 @@ Plain HTML and one CSS file — no build step, no dependencies, no Jekyll.
 | File           | Purpose                                              |
 | -------------- | ---------------------------------------------------- |
 | `index.html`   | Home — what the app is, features, privacy summary    |
-| `support.html` | Support — contact email and FAQ                      |
-| `privacy.html` | Privacy policy — App Store / Play submission URL     |
+| `support/index.html` | Support — contact email and FAQ                |
+| `privacy/index.html` | Privacy policy — App Store / Play submission URL |
 | `assets/style.css` | Shared styles; tokens mirror the app's `src/theme.ts` |
 | `assets/icon.png`  | App icon, used as favicon and hero image         |
 
@@ -44,8 +44,8 @@ python3 -m http.server 8000
 4. Wait for the first deploy, then confirm the URLs resolve:
 
    - Home — `https://tigransimonyan.github.io/moments-site/`
-   - Support — `https://tigransimonyan.github.io/moments-site/support.html`
-   - Privacy — `https://tigransimonyan.github.io/moments-site/privacy.html`
+   - Support — `https://tigransimonyan.github.io/moments-site/support/`
+   - Privacy — `https://tigransimonyan.github.io/moments-site/privacy/`
 
 Links between pages are relative, so the site works unchanged under the
 `/moments-site/` subpath or on a custom domain later.
@@ -66,7 +66,7 @@ Links between pages are relative, so the site works unchanged under the
       requests, opt-in write-only Apple Health). It is not legal advice; give it
       a read before submitting.
 - [ ] **Keep it honest** — if the app ever gains analytics, a backend, or Apple
-      Health *read* access, `privacy.html` must be updated to match.
+      Health *read* access, `privacy/index.html` must be updated to match.
 
 ## Content sources
 
